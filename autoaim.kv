@@ -1,0 +1,15 @@
+#:kivy 2.0
+BoxLayout:
+    orientation: 'vertical'
+    XCamera:
+        id: camera
+        resolution: (640, 480)
+        play: True
+    Label:
+        text: 'Auto-Aim Detector'
+        size_hint_y: 0.1
+        color: (0, 1, 0, 1)
+    Button:
+        text: 'Sair'
+        size_hint_y: 0.1
+        on_press: app.stop()
